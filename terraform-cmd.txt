@@ -1,0 +1,14 @@
+## list terraform state of resource
+terraform state list
+
+## 
+terraform state rm <resource-name>
+
+example:
+  terraform state rm azurerm_subnet.vsubnet
+
+
+## If you want to remove ALL resources from state file run:
+  ```
+    terraform state rm -dry-run $(terraform state list)
+  ```

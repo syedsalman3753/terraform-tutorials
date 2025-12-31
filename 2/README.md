@@ -1,0 +1,1 @@
+terraform plan -input=false -var-file=./variables.tfvar
